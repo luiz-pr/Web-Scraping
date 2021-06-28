@@ -25,7 +25,7 @@ driver = webdriver.Chrome(executable_path=r'./chromedriver.exe')
 
 
 driver.get(url)
-time.sleep(5)
+time.sleep(4)
 
 
 driver.find_element_by_xpath('//div[@class="nba-stat-table"]//table//thead//tr//th[@data-field="PTS"]').click()
@@ -51,6 +51,6 @@ driver.quit()
 
 
 js = json.dumps(top10ranking)
-fp = open('ranking.json', 'w')
+fp = open('ranking.txt', 'w')
 fp.write(js)
 fp.close()
