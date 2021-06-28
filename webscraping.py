@@ -51,6 +51,6 @@ driver.quit()
 
 
 js = json.dumps(top10ranking)
-fp = open('ranking.txt', 'w')
+fp = open('ranking.json', 'w')
 fp.write(js)
 fp.close()
