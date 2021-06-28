@@ -10,14 +10,14 @@ from selenium.webdriver.chrome.options import Options
 url = "https://www.nba.com/stats/players/traditional/?sort=PTS&dir=-1"
 top10ranking = {}
 
-# rankings = {
-#     '3points': {'field': 'FG3M,', 'label': '3PM'},
-#     '3points': {'field': 'PTS,', 'label': '3PM'},
-#     '3points': {'field': 'AST,', 'label': '3PM'},
-#     '3points': {'field': 'REB,', 'label': '3PM'},
-#     '3points': {'field': 'STL,', 'label': '3PM'},
-#     '3points': {'field': 'BLK,', 'label': '3PM'},
-# }
+rankings = {
+    '3points': {'field': 'FG3M,', 'label': '3PM'},
+    'points': {'field': 'PTS,', 'label': 'PTS'},
+    'assinantes': {'field': 'AST,', 'label': 'AST'},
+    'rebounds': {'field': 'REB,', 'label': 'REB'},
+    'steals': {'field': 'STL,', 'label': 'STL'},
+    'blocks': {'field': 'BLK,', 'label': 'BLK'}
+}
 
 option = Options()
 option.headless = True
